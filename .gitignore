@@ -1,0 +1,59 @@
+# Audit Working Directories
+# These directories contain sensitive audit data and should not be committed
+
+# Target code directory - contains the smart contracts being audited
+target/
+
+# Audit analysis directories - contain sensitive findings and observations
+data/
+observations/
+findings/
+logs/
+
+# Custom audit scripts - may contain proprietary analysis tools
+scripts/
+
+# Development and build artifacts
+node_modules/
+.env
+.env.local
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Foundry/Hardhat artifacts (if accidentally placed in root)
+out/
+cache/
+artifacts/
+typechain/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Security analysis outputs
+*.sarif
+slither-report.*
+mythril-report.*
+coverage-report.*
+
+# Backup files
+*.bak
+*.backup 
